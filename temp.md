@@ -28,6 +28,19 @@
 ```
 
 
+## inheritance
+
+```
+"key.inheritedtypes" : [
+        {
+          "key.name" : "NSObject"
+        },
+        {
+          "key.name" : "UNUserNotificationCenterDelegate"
+        }
+      ],
+```
+
 
 ### Working
 
@@ -77,14 +90,24 @@ with types
 ```
 
 
-+ extension
++ extension "source.lang.swift.decl.extension",
 
 ```
 
 [."key.substructure"[]? | select(."key.kind" == "source.lang.swift.decl.class")?, select(."key.kind" == "source.lang.swift.decl.struct")? , select(."key.kind" == "source.lang.swift.decl.enum")?, select(."key.kind" == "source.lang.swift.decl.extension")? | {kind: ."key.kind" , name: ."key.name", members: [       (."key.substructure"[] |         select(."key.kind" == "source.lang.swift.decl.function.method.instance") |       {name:  ."key.name", scope: ."key.accessibility"})]} ]
 
 ```
-"source.lang.swift.decl.extension",
+
+
+
++ inherits, "key.inheritedtypes"
+
+
+[."key.substructure"[]? | select(."key.kind" == "source.lang.swift.decl.class")?, select(."key.kind" == "source.lang.swift.decl.struct")? , select(."key.kind" == "source.lang.swift.decl.enum")?, select(."key.kind" == "source.lang.swift.decl.extension")? | {kind: ."key.kind" , name: ."key.name", inhertics: ."key.inheritedtypes"?, members: [       (."key.substructure"[] |         select(."key.kind" == "source.lang.swift.decl.function.method.instance") |       {name:  ."key.name", scope: ."key.accessibility"})]} ]
+
+
+
+[."key.substructure"[]? | select(."key.kind" == "source.lang.swift.decl.class")?, select(."key.kind" == "source.lang.swift.decl.struct")? , select(."key.kind" == "source.lang.swift.decl.enum")?, select(."key.kind" == "source.lang.swift.decl.extension")? | {kind: ."key.kind" , name: ."key.name", inhertics: [."key.inheritedtypes"."key.name"], members: [       (."key.substructure"[] |         select(."key.kind" == "source.lang.swift.decl.function.method.instance") |       {name:  ."key.name", scope: ."key.accessibility"})]} ]
 
 ## Tools
 
