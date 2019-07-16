@@ -101,6 +101,24 @@
     ]
   },
   {
+    "kind": "source.lang.swift.decl.protocol",
+    "name": "SomeProtocol",
+    "inhertics": null,
+    "members": []
+  },
+  {
+    "kind": "source.lang.swift.decl.protocol",
+    "name": "AnotherProtocol",
+    "inhertics": null,
+    "members": []
+  },
+  {
+    "kind": "source.lang.swift.decl.protocol",
+    "name": "FullyNamed",
+    "inhertics": null,
+    "members": []
+  },
+  {
     "kind": "source.lang.swift.decl.struct",
     "name": "Person",
     "inhertics": [
@@ -126,6 +144,17 @@
     ]
   },
   {
+    "kind": "source.lang.swift.decl.protocol",
+    "name": "RandomNumberGenerator",
+    "inhertics": null,
+    "members": [
+      {
+        "name": "random()",
+        "scope": "source.lang.swift.accessibility.internal"
+      }
+    ]
+  },
+  {
     "kind": "source.lang.swift.decl.class",
     "name": "LinearCongruentialGenerator",
     "inhertics": [
@@ -136,6 +165,17 @@
     "members": [
       {
         "name": "random()",
+        "scope": "source.lang.swift.accessibility.internal"
+      }
+    ]
+  },
+  {
+    "kind": "source.lang.swift.decl.protocol",
+    "name": "Togglable",
+    "inhertics": null,
+    "members": [
+      {
+        "name": "toggle()",
         "scope": "source.lang.swift.accessibility.internal"
       }
     ]
@@ -156,6 +196,18 @@
     ]
   },
   {
+    "kind": "source.lang.swift.decl.protocol",
+    "name": "Named",
+    "inhertics": null,
+    "members": []
+  },
+  {
+    "kind": "source.lang.swift.decl.protocol",
+    "name": "Aged",
+    "inhertics": null,
+    "members": []
+  },
+  {
     "kind": "source.lang.swift.decl.struct",
     "name": "Person2",
     "inhertics": [
@@ -167,6 +219,17 @@
       }
     ],
     "members": []
+  },
+  {
+    "kind": "source.lang.swift.decl.protocol",
+    "name": "CounterDataSource",
+    "inhertics": null,
+    "members": [
+      {
+        "name": "increment(forCount:)",
+        "scope": "source.lang.swift.accessibility.internal"
+      }
+    ]
   },
   {
     "kind": "source.lang.swift.decl.class",
