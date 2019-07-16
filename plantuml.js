@@ -12,8 +12,8 @@ let isPrivate = 'source.lang.swift.accessibility.private'
 var STR2REPLACE = 'STR2REPLACE'
 
 var plantumlTemplate = `
-' styling goes here
 @startuml
+' styling goes here
 `+STR2REPLACE+`
 @enduml
 `
@@ -91,7 +91,7 @@ srcjs.forEach(function (item){
             // msig += (method.scope == isPublic) ? '+' : '-'
             // msig += method.name + '\n'
             // methods += msig
-            var connect = `${item.name} -- ${obj["key.name"]}: inhertics`
+            var connect = `${item.name} <-- ${obj["key.name"]}: inhertics`
             // console.log(connect)
             connections.push(connect)
         })
