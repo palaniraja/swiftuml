@@ -1,0 +1,355 @@
+[
+  {
+    "kind": "source.lang.swift.decl.class",
+    "name": "Vehicle",
+    "inhertics": null,
+    "members": [
+      {
+        "name": "makeNoise()",
+        "scope": "source.lang.swift.accessibility.internal"
+      }
+    ]
+  },
+  {
+    "kind": "source.lang.swift.decl.class",
+    "name": "Bicycle",
+    "inhertics": [
+      {
+        "key.name": "Vehicle"
+      }
+    ],
+    "members": []
+  },
+  {
+    "kind": "source.lang.swift.decl.class",
+    "name": "Tandem",
+    "inhertics": [
+      {
+        "key.name": "Bicycle"
+      }
+    ],
+    "members": []
+  },
+  {
+    "kind": "source.lang.swift.decl.class",
+    "name": "Train",
+    "inhertics": [
+      {
+        "key.name": "Vehicle"
+      }
+    ],
+    "members": [
+      {
+        "name": "makeNoise()",
+        "scope": "source.lang.swift.accessibility.internal"
+      }
+    ]
+  },
+  {
+    "kind": "source.lang.swift.decl.class",
+    "name": "Car",
+    "inhertics": [
+      {
+        "key.name": "Vehicle"
+      }
+    ],
+    "members": []
+  },
+  {
+    "kind": "source.lang.swift.decl.class",
+    "name": "AutomaticCar",
+    "inhertics": [
+      {
+        "key.name": "Car"
+      }
+    ],
+    "members": []
+  },
+  {
+    "kind": "source.lang.swift.decl.extension",
+    "name": "Double",
+    "inhertics": null,
+    "members": []
+  },
+  {
+    "kind": "source.lang.swift.decl.struct",
+    "name": "Size",
+    "inhertics": null,
+    "members": []
+  },
+  {
+    "kind": "source.lang.swift.decl.struct",
+    "name": "Point",
+    "inhertics": null,
+    "members": []
+  },
+  {
+    "kind": "source.lang.swift.decl.struct",
+    "name": "Rect",
+    "inhertics": null,
+    "members": []
+  },
+  {
+    "kind": "source.lang.swift.decl.extension",
+    "name": "Rect",
+    "inhertics": null,
+    "members": [
+      {
+        "name": "init(center:size:)",
+        "scope": "source.lang.swift.accessibility.internal"
+      }
+    ]
+  },
+  {
+    "kind": "source.lang.swift.decl.struct",
+    "name": "Person",
+    "inhertics": [
+      {
+        "key.name": "FullyNamed"
+      }
+    ],
+    "members": []
+  },
+  {
+    "kind": "source.lang.swift.decl.class",
+    "name": "Starship",
+    "inhertics": [
+      {
+        "key.name": "FullyNamed"
+      }
+    ],
+    "members": [
+      {
+        "name": "init(name:prefix:)",
+        "scope": "source.lang.swift.accessibility.internal"
+      }
+    ]
+  },
+  {
+    "kind": "source.lang.swift.decl.class",
+    "name": "LinearCongruentialGenerator",
+    "inhertics": [
+      {
+        "key.name": "RandomNumberGenerator"
+      }
+    ],
+    "members": [
+      {
+        "name": "random()",
+        "scope": "source.lang.swift.accessibility.internal"
+      }
+    ]
+  },
+  {
+    "kind": "source.lang.swift.decl.enum",
+    "name": "OnOffSwitch",
+    "inhertics": [
+      {
+        "key.name": "Togglable"
+      }
+    ],
+    "members": [
+      {
+        "name": "toggle()",
+        "scope": "source.lang.swift.accessibility.internal"
+      }
+    ]
+  },
+  {
+    "kind": "source.lang.swift.decl.struct",
+    "name": "Person2",
+    "inhertics": [
+      {
+        "key.name": "Named"
+      },
+      {
+        "key.name": "Aged"
+      }
+    ],
+    "members": []
+  },
+  {
+    "kind": "source.lang.swift.decl.class",
+    "name": "Counter",
+    "inhertics": null,
+    "members": [
+      {
+        "name": "increment()",
+        "scope": "source.lang.swift.accessibility.internal"
+      }
+    ]
+  },
+  {
+    "kind": "source.lang.swift.decl.class",
+    "name": "ThreeSource",
+    "inhertics": [
+      {
+        "key.name": "NSObject"
+      },
+      {
+        "key.name": "CounterDataSource"
+      }
+    ],
+    "members": []
+  },
+  {
+    "kind": "source.lang.swift.decl.class",
+    "name": "TowardsZeroSource",
+    "inhertics": [
+      {
+        "key.name": "NSObject"
+      },
+      {
+        "key.name": "CounterDataSource"
+      }
+    ],
+    "members": [
+      {
+        "name": "increment(forCount:)",
+        "scope": "source.lang.swift.accessibility.internal"
+      }
+    ]
+  },
+  {
+    "kind": "source.lang.swift.decl.struct",
+    "name": "IntStack",
+    "inhertics": null,
+    "members": [
+      {
+        "name": "push(_:)",
+        "scope": "source.lang.swift.accessibility.internal"
+      },
+      {
+        "name": "pop()",
+        "scope": "source.lang.swift.accessibility.internal"
+      }
+    ]
+  },
+  {
+    "kind": "source.lang.swift.decl.struct",
+    "name": "Stack",
+    "inhertics": null,
+    "members": [
+      {
+        "name": "push(_:)",
+        "scope": "source.lang.swift.accessibility.internal"
+      },
+      {
+        "name": "pop()",
+        "scope": "source.lang.swift.accessibility.internal"
+      }
+    ]
+  },
+  {
+    "kind": "source.lang.swift.decl.extension",
+    "name": "Stack",
+    "inhertics": null,
+    "members": []
+  },
+  {
+    "kind": "source.lang.swift.decl.class",
+    "name": "AnotherPublicClass",
+    "inhertics": null,
+    "members": [
+      {
+        "name": "somePrivateMethod()",
+        "scope": "source.lang.swift.accessibility.private"
+      }
+    ]
+  },
+  {
+    "kind": "source.lang.swift.decl.class",
+    "name": "AnotherInternalClass",
+    "inhertics": null,
+    "members": [
+      {
+        "name": "somePrivateMethod()",
+        "scope": "source.lang.swift.accessibility.private"
+      }
+    ]
+  },
+  {
+    "kind": "source.lang.swift.decl.class",
+    "name": "AnotherFilePrivateClass",
+    "inhertics": null,
+    "members": [
+      {
+        "name": "someFilePrivateMethod()",
+        "scope": "source.lang.swift.accessibility.internal"
+      },
+      {
+        "name": "somePrivateMethod()",
+        "scope": "source.lang.swift.accessibility.private"
+      }
+    ]
+  },
+  {
+    "kind": "source.lang.swift.decl.class",
+    "name": "AnotherPrivateClass",
+    "inhertics": null,
+    "members": [
+      {
+        "name": "somePrivateMethod()",
+        "scope": "source.lang.swift.accessibility.internal"
+      }
+    ]
+  },
+  {
+    "kind": "source.lang.swift.decl.enum",
+    "name": "CompassPoint",
+    "inhertics": null,
+    "members": []
+  },
+  {
+    "kind": "source.lang.swift.decl.class",
+    "name": "A",
+    "inhertics": null,
+    "members": [
+      {
+        "name": "someMethod()",
+        "scope": "source.lang.swift.accessibility.fileprivate"
+      }
+    ]
+  },
+  {
+    "kind": "source.lang.swift.decl.class",
+    "name": "B",
+    "inhertics": [
+      {
+        "key.name": "A"
+      }
+    ],
+    "members": [
+      {
+        "name": "someMethod()",
+        "scope": "source.lang.swift.accessibility.internal"
+      }
+    ]
+  },
+  {
+    "kind": "source.lang.swift.decl.class",
+    "name": "C",
+    "inhertics": null,
+    "members": [
+      {
+        "name": "someMethod()",
+        "scope": "source.lang.swift.accessibility.fileprivate"
+      }
+    ]
+  },
+  {
+    "kind": "source.lang.swift.decl.class",
+    "name": "D",
+    "inhertics": [
+      {
+        "key.name": "C"
+      }
+    ],
+    "members": [
+      {
+        "name": "someMethod()",
+        "scope": "source.lang.swift.accessibility.internal"
+      }
+    ]
+  }
+]

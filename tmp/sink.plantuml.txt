@@ -1,0 +1,120 @@
+
+' styling goes here
+@startuml
+class "Vehicle" as Vehicle0 {
++makeNoise()
+
+}
+class "Bicycle" as Bicycle1 {
+
+}
+class "Tandem" as Tandem2 {
+
+}
+class "Train" as Train3 {
++makeNoise()
+
+}
+class "Car" as Car4 {
+
+}
+class "AutomaticCar" as AutomaticCar5 {
+
+}
+class "Double" as Double6 << (E,orchid) extension >> {
+
+}
+class "Size" as Size7 << (S, SkyBlue) struct >> {
+
+}
+class "Point" as Point8 << (S, SkyBlue) struct >> {
+
+}
+class "Rect" as Rect9 << (S, SkyBlue) struct >> {
+
+}
+class "Rect" as Rect10 << (E,orchid) extension >> {
++init(center:size:)
+
+}
+class "Person" as Person11 << (S, SkyBlue) struct >> {
+
+}
+class "Starship" as Starship12 {
++init(name:prefix:)
+
+}
+class "LinearCongruentialGenerator" as LinearCongruentialGenerator13 {
++random()
+
+}
+class "OnOffSwitch" as OnOffSwitch14 << (E,LightSteelBlue) enum >> {
++toggle()
+
+}
+class "Person2" as Person215 << (S, SkyBlue) struct >> {
+
+}
+class "Counter" as Counter16 {
++increment()
+
+}
+class "ThreeSource" as ThreeSource17 {
+
+}
+class "TowardsZeroSource" as TowardsZeroSource18 {
++increment(forCount:)
+
+}
+class "IntStack" as IntStack19 << (S, SkyBlue) struct >> {
++push(_:)
++pop()
+
+}
+class "Stack" as Stack20 << (S, SkyBlue) struct >> {
++push(_:)
++pop()
+
+}
+class "Stack" as Stack21 << (E,orchid) extension >> {
+
+}
+class "AnotherPublicClass" as AnotherPublicClass22 {
+-somePrivateMethod()
+
+}
+class "AnotherInternalClass" as AnotherInternalClass23 {
+-somePrivateMethod()
+
+}
+class "AnotherFilePrivateClass" as AnotherFilePrivateClass24 {
++someFilePrivateMethod()
+-somePrivateMethod()
+
+}
+class "AnotherPrivateClass" as AnotherPrivateClass25 {
++somePrivateMethod()
+
+}
+class "CompassPoint" as CompassPoint26 << (E,LightSteelBlue) enum >> {
+
+}
+class "A" as A27 {
+-someMethod()
+
+}
+class "B" as B28 {
++someMethod()
+
+}
+class "C" as C29 {
+-someMethod()
+
+}
+class "D" as D30 {
++someMethod()
+
+}
+
+@enduml
+
