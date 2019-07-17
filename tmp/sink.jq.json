@@ -2,7 +2,7 @@
   {
     "kind": "source.lang.swift.decl.class",
     "name": "Vehicle",
-    "inhertics": null,
+    "inherits": null,
     "members": [
       {
         "name": "makeNoise()",
@@ -13,7 +13,7 @@
   {
     "kind": "source.lang.swift.decl.class",
     "name": "Bicycle",
-    "inhertics": [
+    "inherits": [
       {
         "key.name": "Vehicle"
       }
@@ -23,7 +23,7 @@
   {
     "kind": "source.lang.swift.decl.class",
     "name": "Tandem",
-    "inhertics": [
+    "inherits": [
       {
         "key.name": "Bicycle"
       }
@@ -33,7 +33,7 @@
   {
     "kind": "source.lang.swift.decl.class",
     "name": "Train",
-    "inhertics": [
+    "inherits": [
       {
         "key.name": "Vehicle"
       }
@@ -48,7 +48,7 @@
   {
     "kind": "source.lang.swift.decl.class",
     "name": "Car",
-    "inhertics": [
+    "inherits": [
       {
         "key.name": "Vehicle"
       }
@@ -58,7 +58,7 @@
   {
     "kind": "source.lang.swift.decl.class",
     "name": "AutomaticCar",
-    "inhertics": [
+    "inherits": [
       {
         "key.name": "Car"
       }
@@ -68,31 +68,31 @@
   {
     "kind": "source.lang.swift.decl.extension",
     "name": "Double",
-    "inhertics": null,
+    "inherits": null,
     "members": []
   },
   {
     "kind": "source.lang.swift.decl.struct",
     "name": "Size",
-    "inhertics": null,
+    "inherits": null,
     "members": []
   },
   {
     "kind": "source.lang.swift.decl.struct",
     "name": "Point",
-    "inhertics": null,
+    "inherits": null,
     "members": []
   },
   {
     "kind": "source.lang.swift.decl.struct",
     "name": "Rect",
-    "inhertics": null,
+    "inherits": null,
     "members": []
   },
   {
     "kind": "source.lang.swift.decl.extension",
     "name": "Rect",
-    "inhertics": null,
+    "inherits": null,
     "members": [
       {
         "name": "init(center:size:)",
@@ -103,25 +103,25 @@
   {
     "kind": "source.lang.swift.decl.protocol",
     "name": "SomeProtocol",
-    "inhertics": null,
+    "inherits": null,
     "members": []
   },
   {
     "kind": "source.lang.swift.decl.protocol",
     "name": "AnotherProtocol",
-    "inhertics": null,
+    "inherits": null,
     "members": []
   },
   {
     "kind": "source.lang.swift.decl.protocol",
     "name": "FullyNamed",
-    "inhertics": null,
+    "inherits": null,
     "members": []
   },
   {
     "kind": "source.lang.swift.decl.struct",
     "name": "Person",
-    "inhertics": [
+    "inherits": [
       {
         "key.name": "FullyNamed"
       }
@@ -131,7 +131,7 @@
   {
     "kind": "source.lang.swift.decl.class",
     "name": "Starship",
-    "inhertics": [
+    "inherits": [
       {
         "key.name": "FullyNamed"
       }
@@ -146,7 +146,7 @@
   {
     "kind": "source.lang.swift.decl.protocol",
     "name": "RandomNumberGenerator",
-    "inhertics": null,
+    "inherits": null,
     "members": [
       {
         "name": "random()",
@@ -157,7 +157,7 @@
   {
     "kind": "source.lang.swift.decl.class",
     "name": "LinearCongruentialGenerator",
-    "inhertics": [
+    "inherits": [
       {
         "key.name": "RandomNumberGenerator"
       }
@@ -172,7 +172,7 @@
   {
     "kind": "source.lang.swift.decl.protocol",
     "name": "Togglable",
-    "inhertics": null,
+    "inherits": null,
     "members": [
       {
         "name": "toggle()",
@@ -183,7 +183,7 @@
   {
     "kind": "source.lang.swift.decl.enum",
     "name": "OnOffSwitch",
-    "inhertics": [
+    "inherits": [
       {
         "key.name": "Togglable"
       }
@@ -198,19 +198,19 @@
   {
     "kind": "source.lang.swift.decl.protocol",
     "name": "Named",
-    "inhertics": null,
+    "inherits": null,
     "members": []
   },
   {
     "kind": "source.lang.swift.decl.protocol",
     "name": "Aged",
-    "inhertics": null,
+    "inherits": null,
     "members": []
   },
   {
     "kind": "source.lang.swift.decl.struct",
     "name": "Person2",
-    "inhertics": [
+    "inherits": [
       {
         "key.name": "Named"
       },
@@ -223,7 +223,7 @@
   {
     "kind": "source.lang.swift.decl.protocol",
     "name": "CounterDataSource",
-    "inhertics": null,
+    "inherits": null,
     "members": [
       {
         "name": "increment(forCount:)",
@@ -234,7 +234,7 @@
   {
     "kind": "source.lang.swift.decl.class",
     "name": "Counter",
-    "inhertics": null,
+    "inherits": null,
     "members": [
       {
         "name": "increment()",
@@ -245,7 +245,7 @@
   {
     "kind": "source.lang.swift.decl.class",
     "name": "ThreeSource",
-    "inhertics": [
+    "inherits": [
       {
         "key.name": "NSObject"
       },
@@ -258,7 +258,7 @@
   {
     "kind": "source.lang.swift.decl.class",
     "name": "TowardsZeroSource",
-    "inhertics": [
+    "inherits": [
       {
         "key.name": "NSObject"
       },
@@ -276,7 +276,7 @@
   {
     "kind": "source.lang.swift.decl.struct",
     "name": "IntStack",
-    "inhertics": null,
+    "inherits": null,
     "members": [
       {
         "name": "push(_:)",
@@ -291,7 +291,7 @@
   {
     "kind": "source.lang.swift.decl.struct",
     "name": "Stack",
-    "inhertics": null,
+    "inherits": null,
     "members": [
       {
         "name": "push(_:)",
@@ -306,13 +306,13 @@
   {
     "kind": "source.lang.swift.decl.extension",
     "name": "Stack",
-    "inhertics": null,
+    "inherits": null,
     "members": []
   },
   {
     "kind": "source.lang.swift.decl.class",
     "name": "AnotherPublicClass",
-    "inhertics": null,
+    "inherits": null,
     "members": [
       {
         "name": "somePrivateMethod()",
@@ -323,7 +323,7 @@
   {
     "kind": "source.lang.swift.decl.class",
     "name": "AnotherInternalClass",
-    "inhertics": null,
+    "inherits": null,
     "members": [
       {
         "name": "somePrivateMethod()",
@@ -334,7 +334,7 @@
   {
     "kind": "source.lang.swift.decl.class",
     "name": "AnotherFilePrivateClass",
-    "inhertics": null,
+    "inherits": null,
     "members": [
       {
         "name": "someFilePrivateMethod()",
@@ -349,7 +349,7 @@
   {
     "kind": "source.lang.swift.decl.class",
     "name": "AnotherPrivateClass",
-    "inhertics": null,
+    "inherits": null,
     "members": [
       {
         "name": "somePrivateMethod()",
@@ -360,13 +360,13 @@
   {
     "kind": "source.lang.swift.decl.enum",
     "name": "CompassPoint",
-    "inhertics": null,
+    "inherits": null,
     "members": []
   },
   {
     "kind": "source.lang.swift.decl.class",
     "name": "A",
-    "inhertics": null,
+    "inherits": null,
     "members": [
       {
         "name": "someMethod()",
@@ -377,7 +377,7 @@
   {
     "kind": "source.lang.swift.decl.class",
     "name": "B",
-    "inhertics": [
+    "inherits": [
       {
         "key.name": "A"
       }
@@ -392,7 +392,7 @@
   {
     "kind": "source.lang.swift.decl.class",
     "name": "C",
-    "inhertics": null,
+    "inherits": null,
     "members": [
       {
         "name": "someMethod()",
@@ -403,7 +403,7 @@
   {
     "kind": "source.lang.swift.decl.class",
     "name": "D",
-    "inhertics": [
+    "inherits": [
       {
         "key.name": "C"
       }

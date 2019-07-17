@@ -1,120 +1,163 @@
 
-' styling goes here
 @startuml
-class "Vehicle" as Vehicle0 {
+' styling goes here
+class "Vehicle" as Vehicle {
 +makeNoise()
 
 }
-class "Bicycle" as Bicycle1 {
+class "Bicycle" as Bicycle {
 
 }
-class "Tandem" as Tandem2 {
+class "Tandem" as Tandem {
 
 }
-class "Train" as Train3 {
+class "Train" as Train {
 +makeNoise()
 
 }
-class "Car" as Car4 {
+class "Car" as Car {
 
 }
-class "AutomaticCar" as AutomaticCar5 {
+class "AutomaticCar" as AutomaticCar {
 
 }
-class "Double" as Double6 << (E,orchid) extension >> {
+class "Double" as Double << (E,orchid) extension >> {
 
 }
-class "Size" as Size7 << (S, SkyBlue) struct >> {
+class "Size" as Size << (S, SkyBlue) struct >> {
 
 }
-class "Point" as Point8 << (S, SkyBlue) struct >> {
+class "Point" as Point << (S, SkyBlue) struct >> {
 
 }
-class "Rect" as Rect9 << (S, SkyBlue) struct >> {
+class "Rect" as Rect << (S, SkyBlue) struct >> {
 
 }
 class "Rect" as Rect10 << (E,orchid) extension >> {
 +init(center:size:)
 
 }
-class "Person" as Person11 << (S, SkyBlue) struct >> {
+class "SomeProtocol" as SomeProtocol << (P,GoldenRod) protocol >> {
 
 }
-class "Starship" as Starship12 {
+class "AnotherProtocol" as AnotherProtocol << (P,GoldenRod) protocol >> {
+
+}
+class "FullyNamed" as FullyNamed << (P,GoldenRod) protocol >> {
+
+}
+class "Person" as Person << (S, SkyBlue) struct >> {
+
+}
+class "Starship" as Starship {
 +init(name:prefix:)
 
 }
-class "LinearCongruentialGenerator" as LinearCongruentialGenerator13 {
+class "RandomNumberGenerator" as RandomNumberGenerator << (P,GoldenRod) protocol >> {
 +random()
 
 }
-class "OnOffSwitch" as OnOffSwitch14 << (E,LightSteelBlue) enum >> {
+class "LinearCongruentialGenerator" as LinearCongruentialGenerator {
++random()
+
+}
+class "Togglable" as Togglable << (P,GoldenRod) protocol >> {
 +toggle()
 
 }
-class "Person2" as Person215 << (S, SkyBlue) struct >> {
+class "OnOffSwitch" as OnOffSwitch << (E,LightSteelBlue) enum >> {
++toggle()
 
 }
-class "Counter" as Counter16 {
-+increment()
+class "Named" as Named << (P,GoldenRod) protocol >> {
 
 }
-class "ThreeSource" as ThreeSource17 {
+class "Aged" as Aged << (P,GoldenRod) protocol >> {
 
 }
-class "TowardsZeroSource" as TowardsZeroSource18 {
+class "Person2" as Person2 << (S, SkyBlue) struct >> {
+
+}
+class "CounterDataSource" as CounterDataSource << (P,GoldenRod) protocol >> {
 +increment(forCount:)
 
 }
-class "IntStack" as IntStack19 << (S, SkyBlue) struct >> {
+class "Counter" as Counter {
++increment()
+
+}
+class "ThreeSource" as ThreeSource {
+
+}
+class "TowardsZeroSource" as TowardsZeroSource {
++increment(forCount:)
+
+}
+class "IntStack" as IntStack << (S, SkyBlue) struct >> {
 +push(_:)
 +pop()
 
 }
-class "Stack" as Stack20 << (S, SkyBlue) struct >> {
+class "Stack" as Stack << (S, SkyBlue) struct >> {
 +push(_:)
 +pop()
 
 }
-class "Stack" as Stack21 << (E,orchid) extension >> {
+class "Stack" as Stack29 << (E,orchid) extension >> {
 
 }
-class "AnotherPublicClass" as AnotherPublicClass22 {
+class "AnotherPublicClass" as AnotherPublicClass {
 -somePrivateMethod()
 
 }
-class "AnotherInternalClass" as AnotherInternalClass23 {
+class "AnotherInternalClass" as AnotherInternalClass {
 -somePrivateMethod()
 
 }
-class "AnotherFilePrivateClass" as AnotherFilePrivateClass24 {
+class "AnotherFilePrivateClass" as AnotherFilePrivateClass {
 +someFilePrivateMethod()
 -somePrivateMethod()
 
 }
-class "AnotherPrivateClass" as AnotherPrivateClass25 {
+class "AnotherPrivateClass" as AnotherPrivateClass {
 +somePrivateMethod()
 
 }
-class "CompassPoint" as CompassPoint26 << (E,LightSteelBlue) enum >> {
+class "CompassPoint" as CompassPoint << (E,LightSteelBlue) enum >> {
 
 }
-class "A" as A27 {
+class "A" as A {
 -someMethod()
 
 }
-class "B" as B28 {
+class "B" as B {
 +someMethod()
 
 }
-class "C" as C29 {
+class "C" as C {
 -someMethod()
 
 }
-class "D" as D30 {
+class "D" as D {
 +someMethod()
 
 }
-
+Bicycle --> Vehicle :  inherits 
+Tandem --> Bicycle :  inherits 
+Train --> Vehicle :  inherits 
+Car --> Vehicle :  inherits 
+AutomaticCar --> Car :  inherits 
+Person --> FullyNamed :  confirms to 
+Starship --> FullyNamed :  confirms to 
+LinearCongruentialGenerator --> RandomNumberGenerator :  confirms to 
+OnOffSwitch --> Togglable :  confirms to 
+Person2 --> Named :  confirms to 
+Person2 --> Aged :  confirms to 
+ThreeSource --> NSObject 
+ThreeSource --> CounterDataSource :  confirms to 
+TowardsZeroSource --> NSObject 
+TowardsZeroSource --> CounterDataSource :  confirms to 
+B --> A :  inherits 
+D --> C :  inherits 
 @enduml
 

@@ -23,13 +23,15 @@ let styleExtn = `<< (E,orchid) extension >>`
 let styleEnum = `<< (E,LightSteelBlue) enum >>`
 let styleProtocol = `<< (P,GoldenRod) protocol >>`
 
-function uniqName(name, index){
+function uniqName(name, index, relationship){
     var newName = name
     if (uniqElementNames.includes(name)) {
         newName += `${index}`
     }
     else {
         uniqElementNames.push(name)
+        uniqElementAndTypes[name] = " " + relationship + " "
+        
     }
     return newName
 }
@@ -42,6 +44,7 @@ var msg = ''
 var i = 0
 
 var uniqElementNames = []
+var uniqElementAndTypes = {}
 
 var connections = []
 
@@ -51,23 +54,23 @@ srcjs.forEach(function (item){
     var strItem = ''
     if (item && item.kind == isSwiftClass && item.name){
         
-        strItem += 'class "' + item.name + '" as ' + uniqName(item.name, i) + ' {\n'
+        strItem += 'class "' + item.name + '" as ' + uniqName(item.name, i, "inherits") + ' {\n'
 
     }
     else if (item && item.kind == isSwiftStruct && item.name){
-        strItem += 'class "' + item.name + '" as ' + uniqName(item.name, i) + ' ' + styleStruct + ' {\n'
+        strItem += 'class "' + item.name + '" as ' + uniqName(item.name, i, "inherits") + ' ' + styleStruct + ' {\n'
 
     }
     else if (item && item.kind == isSwiftExtension && item.name){
-        strItem += 'class "' + item.name + '" as ' + uniqName(item.name, i) + ' ' + styleExtn + ' {\n'
+        strItem += 'class "' + item.name + '" as ' + uniqName(item.name, i, "ext") + ' ' + styleExtn + ' {\n'
 
     }
     else if (item && item.kind == isSwiftEnum && item.name) {
-        strItem += 'class "' + item.name + '" as ' + uniqName(item.name, i) + ' ' + styleEnum + ' {\n'
+        strItem += 'class "' + item.name + '" as ' + uniqName(item.name, i, "") + ' ' + styleEnum + ' {\n'
 
     }
     else if (item && item.kind == isSwiftProtocol && item.name) {
-        strItem += 'class "' + item.name + '" as ' + uniqName(item.name, i) + ' ' + styleProtocol + ' {\n'
+        strItem += 'class "' + item.name + '" as ' + uniqName(item.name, i, "confirms to") + ' ' + styleProtocol + ' {\n'
 
     }
 
@@ -84,15 +87,14 @@ srcjs.forEach(function (item){
         
     }
 
-    if (item.inhertics && item.inhertics.length > 0) {
+    if (item.inherits && item.inherits.length > 0) {
 
-        item.inhertics.forEach(function (obj) {
-            // var msig = ''
-            // msig += (method.scope == isPublic) ? '+' : '-'
-            // msig += method.name + '\n'
-            // methods += msig
-            var connect = `${item.name} <-- ${obj["key.name"]}: inhertics`
-            // console.log(connect)
+        item.inherits.forEach(function (obj) {
+
+            var linkTo = obj["key.name"]
+            var namedConnection = (uniqElementAndTypes[linkTo]) ? ": " + uniqElementAndTypes[linkTo] : ""
+            var connect = `${item.name} --> ${linkTo} ${namedConnection}`
+
             connections.push(connect)
         })
 
@@ -107,3 +109,5 @@ srcjs.forEach(function (item){
 var out = plantumlTemplate.replace(STR2REPLACE, msg + connections.join("\n"))
 
 console.log(out)
+
+// console.log(JSON.stringify(uniqElementAndTypes))
