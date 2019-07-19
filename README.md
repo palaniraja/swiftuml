@@ -17,10 +17,11 @@ Generates the below content, which you can copy and paste it in [PlantText](http
 ```
 
 
+
 @startuml
 ' styling goes here
 class "Vehicle" as Vehicle {
-+makeNoise()
+  +makeNoise()
 
 }
 class "Bicycle" as Bicycle {
@@ -30,7 +31,7 @@ class "Tandem" as Tandem {
 
 }
 class "Train" as Train {
-+makeNoise()
+  +makeNoise()
 
 }
 class "Car" as Car {
@@ -46,7 +47,7 @@ class "Rect" as Rect << (S, SkyBlue) struct >> {
 
 }
 class "Rect" as Rect8 << (E,orchid) extension >> {
-+init(center:size:)
+  +init(center:size:)
 
 }
 class "FullyNamed" as FullyNamed << (P,GoldenRod) protocol >> {
@@ -56,15 +57,15 @@ class "Person" as Person << (S, SkyBlue) struct >> {
 
 }
 class "Starship" as Starship {
-+init(name:prefix:)
+  +init(name:prefix:)
 
 }
 class "Togglable" as Togglable << (P,GoldenRod) protocol >> {
-+toggle()
+  +toggle()
 
 }
 class "OnOffSwitch" as OnOffSwitch << (E,LightSteelBlue) enum >> {
-+toggle()
+  +toggle()
 
 }
 class "Named" as Named << (P,GoldenRod) protocol >> {
@@ -77,50 +78,51 @@ class "Person2" as Person2 << (S, SkyBlue) struct >> {
 
 }
 class "CounterDataSource" as CounterDataSource << (P,GoldenRod) protocol >> {
-+increment(forCount:)
+  +increment(forCount:)
 
 }
 class "Counter" as Counter {
-+increment()
+  +increment()
 
 }
 class "ThreeSource" as ThreeSource {
 
 }
 class "TowardsZeroSource" as TowardsZeroSource {
-+increment(forCount:)
+  +increment(forCount:)
 
 }
 class "IntStack" as IntStack << (S, SkyBlue) struct >> {
-+push(_:)
-+pop()
+  +push(_:)
+  +pop()
 
 }
 class "Stack" as Stack << (S, SkyBlue) struct >> {
-+push(_:)
-+pop()
+  +push(_:)
+  +pop()
 
 }
 class "Stack" as Stack23 << (E,orchid) extension >> {
 
 }
 class "AnotherPublicClass" as AnotherPublicClass {
--somePrivateMethod()
+  -somePrivateMethod()
 
 }
 class "AnotherInternalClass" as AnotherInternalClass {
--somePrivateMethod()
+  -somePrivateMethod()
 
 }
 class "AnotherFilePrivateClass" as AnotherFilePrivateClass {
-+someFilePrivateMethod()
--somePrivateMethod()
+  +someFilePrivateMethod()
+  -somePrivateMethod()
 
 }
 class "AnotherPrivateClass" as AnotherPrivateClass {
-+somePrivateMethod()
+  +somePrivateMethod()
 
 }
+
 Bicycle --> Vehicle :  inherits 
 Tandem --> Bicycle :  inherits 
 Train --> Vehicle :  inherits 
@@ -138,6 +140,8 @@ TowardsZeroSource --> CounterDataSource :  confirms to
 Rect <.. Rect8 : ext
 Stack <.. Stack23 : ext
 @enduml
+
+
 
 
 ```
