@@ -88,7 +88,7 @@ srcjs.forEach(function (item){
     if (item.members && item.members.length>0){
         
         item.members.forEach(function (method) {
-            var msig = ''
+            var msig = '  '
             msig += (method.scope == isPublic)? '+': '-'
             msig += method.name + '\n'
             methods += msig
@@ -115,6 +115,6 @@ srcjs.forEach(function (item){
 }
 );
 
-var out = plantumlTemplate.replace(STR2REPLACE, msg + connections.join("\n") + "\n" + extnConnections.join("\n"))
+var out = plantumlTemplate.replace(STR2REPLACE, msg + "\n" + connections.join("\n") + "\n" + extnConnections.join("\n"))
 
 console.log(out)
