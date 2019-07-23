@@ -1,4 +1,4 @@
-# Swift to PlantUML (work-in-progress)
+# Swift to PlantUML
 
 Using SourceKitten and PlantUML to generate UML class diagrams from swift source code.
 
