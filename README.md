@@ -10,14 +10,11 @@ Using SourceKitten and PlantUML to generate UML class diagrams from swift source
 
 `sh plantuml.sh demo.swift`
 
-will produce this diagram [Full Image](https://www.plantuml.com/plantuml/svg/hLTBRzim3BxxLmYxBCNQOEjjGL4qZxOeqAL170pOBeDgCx4MMp8aUMts-E_Jmuubnt7TOPU4ukCJHL4a7Lm9YRaiiZHuYyBLb_jhzJjUheA4n80Wo-KEPP0z0XU1s1AQOuup918SioT2DsYDKm5xq-lvB8XIB0HwynaI4gNm1c61IXhz2X1wb-4jp1aHC3W9WZ-L-eH4kqgzf9LwBLzX6aDcn9RqfHmJQeMQwjfeYhbHLFyUnBYGBCEIH9M2o_0qPwnuB3sr9BguG8FhKyOZ5RGJ1CyIg22CeijBpp0aFwsP9enHU8h2xMwI5d22XEH599is2qQeD4Q6wccrXCWQQU9VR3wyxpwK2Y-XH0uYe1BuIAW3ZTmeXoo31MUIHIorHtOO1dfnUilI6EYIAVIyaZHy6bCc4-0UKeFN7-ocIDFT76SG6vnwsHzYePu1iubcoPwn3TKR4md9RIZAXHD6gjmOvHpMvDaBurAbEilcXNv_jq21OybiThPANZg8seuRE-z5t1CAc4yPtV12NIV1gRzLX_mevefjDYckdib-rSD1gNNz9_j07zRhy8d8A35mphhCqdkoIMGe0L9x2q2Bh0knpe9N9i1uKzffuhLvS-uapddFp9coGh-m6POuP0MFR40Fk3q2IsZ48LCNE5WpRW2yL2iXNVYcdNV12GTmF7BMVcLcJvZ7uYjmvcetkRrSlAFgZd6qDH3LeZEE2ZClH3Bufd0qpNBl43NQ_uOw_zYtALJbJ3KIrMeqpwjoDTluS2PC7IK_i8HF81CMUrwKLdVwzYXE3-0ymIi0RqXQAHrWDcKsLXhMaUoX--vuRBVsdOx3JLcMAw9keoxZnUhXk6MTg6FMijV4JY-rMst-M2SwSMPsjcZ72QhfwEpiz-L-iXeXGbLqY1H1EHuPSQNhYis0TCnOpph7PDv0P9GquIYKBN4uL2AdkuvGnEYQy4mWoO9zz-jMwsewnhAz0VeWRgCmHdKZyXMhccoKsjpn54pjz-Lk-JEXcOSFZz_ryEM9ZFbXyMvW7HJ79kA1GY_SYSKPkrSsAo_IvTcPSJYi1i6HBbv1MI4Lkofmbdy5DDPV3y5V)
+will produce this diagram [Full Image](https://www.plantuml.com/plantuml/svg/hLPBRzim3BxhLmYzBCNQ7BhB41H1qzTGe4k3EXYmNGPLPc8jUXYIl3PRzzydoNOYnMtc0hia5Fdn4qM9fD6PiKJRId3q3cVphxTNxdToFqS5om63AEqQ2n0Fe0qoAoPBeed0fY2vUcHoYHU46zYuNaql4UN467pm1Gf6EHnWOd0Zuzy8u_U2h62gc8718K9_MlWve-iMtiWElhNFYSn117CjfbPDcAoDNjgtqGNH0UZ-4uf9PPKWbj4M42iIvAMg7ff8Qn6VdkB1rP7Ir2Nj4CEJ1McOadWyJXplWThWveNWb1tXRBK-vnKSOcDrvTJxV3xktycTcKbc1nIa1Jqox1UCugDVLvolfqH07XYtoq0xE_gaU0xoNZdcKYkhgEAxuSpSEr1rfcknvp4ozyXCmShWsIwYaAKBOrHgMB2d9EIvMYuvQTEzMVqhO4ThFJQz-ZjvjrXaZypI8j15woQnjsnPsCm2yFem82knZt6Rp3VcSR9i_BpmrlIVHFa_wNa15whoZ-AIM9AfIjCweHrjZyGoIJK8zyG62wK3GN9Z3MLCl-kNN72X0QA8edLQuUgHwDny0wrYzAwsLuWtqjqneQj0qIxsvj5nbfKf1jyTZvTLcHnYo_Q_gKu-z6qk4wbi0Nhc6f9hMLvNlw-EEiHmR9I0cMO_YONFO0kL9r4qNZV-zYJX7Rh4y0R2QyPRK8TprrRdojD6bWrrtnrVs-tbdLwWG-qqEZv-7cycsGWpwLYODQWPHy7SOcDp64YlEVlPyfej6K01v8K8q7JWuT2PecO-mbJ91TF2OAlGfjdkXyMzC22tlJO5jcqdW5vYIW2XlQNskCB3gQRPtSCFFn4JKt3lzgSThaxzxp9s0Bruwm4z73PJT-JB3ZMrxRHjQTRwCv2v_tv2Vm40)
 
-Generates the below content, which you can copy and paste it in [PlantText](https://www.planttext.com/?text=hLTBRzim3BxxLmYxBCNQOEjjGL4qZxOeqAL170pOBeDgCx4MMp8aUMts-E_Jmuubnt7TOPU4ukCJHL4a7Lm9YRaiiZHuYyBLb_jhzJjUheA4n80Wo-KEPP0z0XU1s1AQOuup918SioT2DsYDKm5xq-lvB8XIB0HwynaI4gNm1c61IXhz2X1wb-4jp1aHC3W9WZ-L-eH4kqgzf9LwBLzX6aDcn9RqfHmJQeMQwjfeYhbHLFyUnBYGBCEIH9M2o_0qPwnuB3sr9BguG8FhKyOZ5RGJ1CyIg22CeijBpp0aFwsP9enHU8h2xMwI5d22XEH599is2qQeD4Q6wccrXCWQQU9VR3wyxpwK2Y-XH0uYe1BuIAW3ZTmeXoo31MUIHIorHtOO1dfnUilI6EYIAVIyaZHy6bCc4-0UKeFN7-ocIDFT76SG6vnwsHzYePu1iubcoPwn3TKR4md9RIZAXHD6gjmOvHpMvDaBurAbEilcXNv_jq21OybiThPANZg8seuRE-z5t1CAc4yPtV12NIV1gRzLX_mevefjDYckdib-rSD1gNNz9_j07zRhy8d8A35mphhCqdkoIMGe0L9x2q2Bh0knpe9N9i1uKzffuhLvS-uapddFp9coGh-m6POuP0MFR40Fk3q2IsZ48LCNE5WpRW2yL2iXNVYcdNV12GTmF7BMVcLcJvZ7uYjmvcetkRrSlAFgZd6qDH3LeZEE2ZClH3Bufd0qpNBl43NQ_uOw_zYtALJbJ3KIrMeqpwjoDTluS2PC7IK_i8HF81CMUrwKLdVwzYXE3-0ymIi0RqXQAHrWDcKsLXhMaUoX--vuRBVsdOx3JLcMAw9keoxZnUhXk6MTg6FMijV4JY-rMst-M2SwSMPsjcZ72QhfwEpiz-L-iXeXGbLqY1H1EHuPSQNhYis0TCnOpph7PDv0P9GquIYKBN4uL2AdkuvGnEYQy4mWoO9zz-jMwsewnhAz0VeWRgCmHdKZyXMhccoKsjpn54pjz-Lk-JEXcOSFZz_ryEM9ZFbXyMvW7HJ79kA1GY_SYSKPkrSsAo_IvTcPSJYi1i6HBbv1MI4Lkofmbdy5DDPV3y5V)
+Generates the below content, which you can copy and paste it in [PlantText](https://www.planttext.com/?text=hLPBRzim3BxhLmYzBCNQ7BhB41H1qzTGe4k3EXYmNGPLPc8jUXYIl3PRzzydoNOYnMtc0hia5Fdn4qM9fD6PiKJRId3q3cVphxTNxdToFqS5om63AEqQ2n0Fe0qoAoPBeed0fY2vUcHoYHU46zYuNaql4UN467pm1Gf6EHnWOd0Zuzy8u_U2h62gc8718K9_MlWve-iMtiWElhNFYSn117CjfbPDcAoDNjgtqGNH0UZ-4uf9PPKWbj4M42iIvAMg7ff8Qn6VdkB1rP7Ir2Nj4CEJ1McOadWyJXplWThWveNWb1tXRBK-vnKSOcDrvTJxV3xktycTcKbc1nIa1Jqox1UCugDVLvolfqH07XYtoq0xE_gaU0xoNZdcKYkhgEAxuSpSEr1rfcknvp4ozyXCmShWsIwYaAKBOrHgMB2d9EIvMYuvQTEzMVqhO4ThFJQz-ZjvjrXaZypI8j15woQnjsnPsCm2yFem82knZt6Rp3VcSR9i_BpmrlIVHFa_wNa15whoZ-AIM9AfIjCweHrjZyGoIJK8zyG62wK3GN9Z3MLCl-kNN72X0QA8edLQuUgHwDny0wrYzAwsLuWtqjqneQj0qIxsvj5nbfKf1jyTZvTLcHnYo_Q_gKu-z6qk4wbi0Nhc6f9hMLvNlw-EEiHmR9I0cMO_YONFO0kL9r4qNZV-zYJX7Rh4y0R2QyPRK8TprrRdojD6bWrrtnrVs-tbdLwWG-qqEZv-7cycsGWpwLYODQWPHy7SOcDp64YlEVlPyfej6K01v8K8q7JWuT2PecO-mbJ91TF2OAlGfjdkXyMzC22tlJO5jcqdW5vYIW2XlQNskCB3gQRPtSCFFn4JKt3lzgSThaxzxp9s0Bruwm4z73PJT-JB3ZMrxRHjQTRwCv2v_tv2Vm40)
 
 ```
-
-
-
 
 @startuml
 ' STYLE START
@@ -47,23 +44,11 @@ class "AutomaticCar" as AutomaticCar {
 class "Double" as Double << (E,orchid) extension >> {
 
 }
-class "Size" as Size << (S, SkyBlue) struct >> {
-
-}
-class "Point" as Point << (S, SkyBlue) struct >> {
-
-}
 class "Rect" as Rect << (S, SkyBlue) struct >> {
 
 }
-class "Rect" as Rect10 << (E,orchid) extension >> {
+class "Rect" as Rect8 << (E,orchid) extension >> {
   +init(center:size:)
-
-}
-class "SomeProtocol" as SomeProtocol << (P,GoldenRod) protocol >> {
-
-}
-class "AnotherProtocol" as AnotherProtocol << (P,GoldenRod) protocol >> {
 
 }
 class "FullyNamed" as FullyNamed << (P,GoldenRod) protocol >> {
@@ -74,14 +59,6 @@ class "Person" as Person << (S, SkyBlue) struct >> {
 }
 class "Starship" as Starship {
   +init(name:prefix:)
-
-}
-class "RandomNumberGenerator" as RandomNumberGenerator << (P,GoldenRod) protocol >> {
-  +random()
-
-}
-class "LinearCongruentialGenerator" as LinearCongruentialGenerator {
-  +random()
 
 }
 class "Togglable" as Togglable << (P,GoldenRod) protocol >> {
@@ -126,7 +103,7 @@ class "Stack" as Stack << (S, SkyBlue) struct >> {
   +pop()
 
 }
-class "Stack" as Stack29 << (E,orchid) extension >> {
+class "Stack" as Stack23 << (E,orchid) extension >> {
 
 }
 class "AnotherPublicClass" as AnotherPublicClass {
@@ -146,25 +123,6 @@ class "AnotherPrivateClass" as AnotherPrivateClass {
   +somePrivateMethod()
 
 }
-class "CompassPoint" as CompassPoint << (E,LightSteelBlue) enum >> {
-
-}
-class "A" as A {
-  -someMethod()
-
-}
-class "B" as B {
-  +someMethod()
-
-}
-class "C" as C {
-  -someMethod()
-
-}
-class "D" as D {
-  +someMethod()
-
-}
 
 Bicycle --|> Vehicle : inherits
 Tandem --|> Bicycle : inherits
@@ -173,7 +131,6 @@ Car --|> Vehicle : inherits
 AutomaticCar --|> Car : inherits
 Person ..|> FullyNamed : confirms to
 Starship ..|> FullyNamed : confirms to
-LinearCongruentialGenerator ..|> RandomNumberGenerator : confirms to
 OnOffSwitch ..|> Togglable : confirms to
 Person2 ..|> Named : confirms to
 Person2 ..|> Aged : confirms to
@@ -181,16 +138,9 @@ ThreeSource --|> NSObject
 ThreeSource ..|> CounterDataSource : confirms to
 TowardsZeroSource --|> NSObject 
 TowardsZeroSource ..|> CounterDataSource : confirms to
-B --|> A : inherits
-D --|> C : inherits
-Rect <.. Rect10 : ext
-Stack <.. Stack29 : ext
+Rect <.. Rect8 : ext
+Stack <.. Stack23 : ext
 @enduml
-
-
-
-
-
 
 ```
 
