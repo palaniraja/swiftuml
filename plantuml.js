@@ -8,12 +8,23 @@ let isPublic = 'source.lang.swift.accessibility.internal'
 let isPrivate = 'source.lang.swift.accessibility.private'
 
 
+let linkTypeInheritance = '--|>' 
+let linkTypeRealize = '..|>' 
+let linkTypeDependency = '<..' 
+let linkTypeAssociation = '-->' 
+let linkTypeAggregation = '--o' 
+let linkTypeComposition = '--*' 
+let linkTypeGeneric = '--'
+
 
 var STR2REPLACE = 'STR2REPLACE'
 
 var plantumlTemplate = `
 @startuml
-' styling goes here
+' STYLE START
+hide empty members
+skinparam shadowing false
+' STYLE END
 `+STR2REPLACE+`
 @enduml
 `
@@ -25,11 +36,13 @@ let styleProtocol = `<< (P,GoldenRod) protocol >>`
 
 function uniqName(item, index, relationship){
     var newName = item.name
+    var linkTypeKey = item.name + "LinkType"
     if (uniqElementNames.includes(item.name)) {
         newName += `${index}`
         if (item.kind == isSwiftExtension) {
-            var connect = `${item.name} <.. ${newName} : ${relationship}`
+            var connect = `${item.name} ${linkTypeDependency} ${newName} : ${relationship}`
             extnConnections.push(connect)
+            
         }
     }
     // else if(item.kind == isSwiftExtension) {
@@ -39,7 +52,29 @@ function uniqName(item, index, relationship){
     // }
     else {
         uniqElementNames.push(item.name)
-        uniqElementAndTypes[item.name] = " " + relationship + " "
+        uniqElementAndTypes[item.name] =  relationship 
+
+        if (relationship == "inherits"){
+            uniqElementAndTypes[linkTypeKey] = linkTypeInheritance
+        }
+        else if (relationship == "confirms to") {
+            uniqElementAndTypes[linkTypeKey] = linkTypeRealize
+        }
+        else if (relationship == "ext") {
+            uniqElementAndTypes[linkTypeKey] = linkTypeDependency
+        }
+        else if (relationship == "association") {
+            uniqElementAndTypes[linkTypeKey] = linkTypeAssociation
+        }
+        else if (relationship == "aggregation") {
+            uniqElementAndTypes[linkTypeKey] = linkTypeAggregation
+        }
+        else if (relationship == "composition") {
+            uniqElementAndTypes[linkTypeKey] = linkTypeComposition
+        }
+        else {
+            uniqElementAndTypes[linkTypeKey] = linkTypeGeneric
+        }
         
     }
     return newName
@@ -102,8 +137,13 @@ srcjs.forEach(function (item){
 
             var linkTo = obj["key.name"]
             var namedConnection = (uniqElementAndTypes[linkTo]) ? ": " + uniqElementAndTypes[linkTo] : ""
-            var connect = `${item.name} --> ${linkTo} ${namedConnection}`
-
+            var linkTypeKey = item.name + "LinkType"
+            
+            if (uniqElementAndTypes[linkTo] == "confirms to"){
+                linkTypeKey = linkTo + "LinkType"
+            }
+           
+            var connect = `${item.name} ${uniqElementAndTypes[linkTypeKey]} ${linkTo} ${namedConnection}`
             connections.push(connect)
         })
 
