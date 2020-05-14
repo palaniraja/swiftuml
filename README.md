@@ -14,6 +14,10 @@ If you want to run on multiple files at the moment, you can do some command line
 
 `ls -d "/directory/full/of/swift/files/"* | xargs -L 1 sh plantuml.sh  | pbcopy`
 
+or if you list of files with fullpath
+
+`cat ~/Downloads/listOfFilesWithFullPath.txt | xargs -L 1 | xargs -L 1 sh plantuml.sh | pbcopy`
+
 once it copy everything to your clipboard (MacOS) you can paste it in your favorite text editor replace multiple `@startuml` and `@enduml` block and have just one _startuml_ at top and _enduml_ at the bottom
 
 ---
