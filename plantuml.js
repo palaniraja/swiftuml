@@ -4,7 +4,7 @@ let isSwiftStruct = 'source.lang.swift.decl.struct'
 let isSwiftEnum = 'source.lang.swift.decl.enum'
 let isSwiftExtension = 'source.lang.swift.decl.extension'
 let isSwiftProtocol = 'source.lang.swift.decl.protocol'
-let isPublic = 'source.lang.swift.accessibility.internal'
+let isPublic = 'source.lang.swift.accessibility.public'
 let isPrivate = 'source.lang.swift.accessibility.private'
 
 
