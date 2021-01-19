@@ -6,6 +6,7 @@ let isSwiftExtension = 'source.lang.swift.decl.extension'
 let isSwiftProtocol = 'source.lang.swift.decl.protocol'
 let isPublic = 'source.lang.swift.accessibility.public'
 let isPrivate = 'source.lang.swift.accessibility.private'
+let isInternal = 'source.lang.swift.accessibility.internal'
 
 
 let linkTypeInheritance = '--|>' 
@@ -124,7 +125,7 @@ srcjs.forEach(function (item){
         
         item.members.forEach(function (method) {
             var msig = '  '
-            msig += (method.scope == isPublic)? '+': '-'
+            msig += (method.scope == isPublic)? '+': (method.scope == isInternal)? '~': '-'
             msig += method.name + '\n'
             methods += msig
         })
