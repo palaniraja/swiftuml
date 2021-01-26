@@ -9,6 +9,7 @@ let isPrivate = 'source.lang.swift.accessibility.private'
 let isInternal = 'source.lang.swift.accessibility.internal'
 let isStaticMethod = 'source.lang.swift.decl.function.method.static'
 let isStaticVariable = 'source.lang.swift.decl.var.static'
+let isNull = null
 
 
 let linkTypeInheritance = '--|>' 
@@ -129,7 +130,15 @@ srcjs.forEach(function (item){
             var msig = '  '
             msig += (method.kind == isStaticMethod || method.kind == isStaticVariable)? '{static} ': ''
             msig += (method.scope == isPublic)? '+': (method.scope == isInternal)? '~': '-'
-            msig += method.name + '\n'
+            msig += method.name
+
+            if (method.type == isNull) {
+                msig += '\n'
+            }
+            else {
+                msig += ': ' + method.type + '\n'
+            }
+
             methods += msig
         })
         
